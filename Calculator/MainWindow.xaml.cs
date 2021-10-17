@@ -24,5 +24,10 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string pressed_button = (e.Source as Button).Content as string;
+        }
     }
 }
