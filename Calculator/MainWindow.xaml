@@ -30,8 +30,8 @@
             
         </Grid.Resources>
         
-        <TextBox x:Name="History_textBox" IsEnabled="False" FontSize="23" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Text="1+1" TextAlignment="Right"></TextBox>
-        <TextBox x:Name="Input_TextBox" IsEnabled="False" FontSize="35" Padding="4" Grid.Row="1" Grid.ColumnSpan="4" Text="1" TextAlignment="Right"></TextBox>
+        <TextBox x:Name="History_textBox" IsEnabled="False" FontSize="23" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" TextAlignment="Right"></TextBox>
+        <TextBox x:Name="Input_TextBox" IsEnabled="False" FontSize="35" Padding="4" Grid.Row="1" Grid.ColumnSpan="4" TextAlignment="Right"></TextBox>
         <Button Content="CE" x:Name="CE_button" Grid.Row="2" Grid.Column="0"/>
         <Button Content="C" x:Name="C_button" Grid.Row="2" Grid.Column="1"/>
         <Button Content="&lt;" x:Name="back_button" Grid.Row="2" Grid.Column="2"/>
@@ -54,7 +54,7 @@
         <Button Content="+" x:Name="plus_button" Grid.Row="5" Grid.Column="3"/>
 
 
-        <Button Content="." x:Name="dot_button" Grid.Row="6" Grid.Column="0"/>
+        <Button Content="," x:Name="dot_button" Grid.Row="6" Grid.Column="0"/>
         <Button Content="0" x:Name="null_button" Grid.Row="6" Grid.Column="1"/>
         <Button Content="=" x:Name="equal_button" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"/>
     </Grid>
