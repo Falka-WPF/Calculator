@@ -120,6 +120,8 @@ namespace Calculator
             }
             else if (pressed_button == "=")
             {
+                if (History.Contains('=') || History.Length ==0 || InputText.Length == 0)
+                    return;
                 string firstSTR = History;
                 string secoundSTR = InputText;
                 char MathOperator= firstSTR[firstSTR.Length-1];
@@ -136,7 +138,6 @@ namespace Calculator
                     secound = Double.Parse(secoundSTR);
 
                     double res = mHelper.MakeOperation(first, secound, MathOperator);
-                    Console.WriteLine(MathOperator);
                     History = $"{first}{MathOperator}{secound}=";
                     InputText = res.ToString();
                 }
